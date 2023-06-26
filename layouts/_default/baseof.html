@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      {{ partial "head.html"}}
+      <title> 
+              {{ block "title" . }}
+                {{ .Site.Title }}
+              {{ end }}
+      </title>
+  </head>
+  <body class="font-['Raleway']">
+    {{ block "header" . }}
+        {{ partial "header.html" }}
+    {{ end }}
+
+    {{ block "main" . }}
+
+    {{ end }}
+
+    {{ block "footer" . }}
+        {{ partial "footer.html" }}
+    {{ end }}
+
+   
+  </body>
+</html>

@@ -1,0 +1,304 @@
+<style>
+  .navbar-fixed-top{
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  color: white ;
+  background: #002147;
+  height: 60px;
+  padding: 0 100px 0 100px;
+  transition: 1s;
+  }
+
+</style>
+
+
+<header class="absolute top-0 left-0 z-50 w-full "
+      data-te-animation-init
+      data-te-animation-start="onLoad"
+      data-te-animation-reset="true"
+      data-te-animation="[fade-in-down_1s_ease-in-out]">
+  <div class="w-full bg-[#002147]">
+    <div class="container mx-auto">
+      <ul class="text-[8px] md:text-xs flex items-center justify-end text-white">
+        <a href="#" class="p-1" target="_blank">
+          <li class="px-1 hover:border-white border-b border-transparent">
+            Contact
+          </li>
+        </a>
+        
+        <a href="http://www.rdunijbpin.org/1068/Home" class="p-1">
+          <li class="p-1 hover:border-white border-b border-transparent">
+            RDVV
+          </li>
+        </a>
+        <a href="https://rdvv.mponline.gov.in/portal/index.aspx" class="p-1" target="_blank">
+          <li class="px-1 hover:border-white border-b border-transparent">
+            MP&nbsp;Online
+          </li>
+        </a>
+        <a href="#" class="p-1" target="_blank">
+          <li class="p-1 hover:border-white border-b border-transparent">
+            Useful&nbsp;links
+          </li>
+        </a>
+        <a href="#" class="p-1" target="_blank">
+            <li class="p-1 hover:border-white border-b border-transparent">
+              Administration
+            </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <div class="container mx-auto flex justify-between items-center lg:border-b-[1px] mb-2">
+    <div>
+      <img
+        src="./images/logo/uicsa-transparent.png"
+        class="w-96 py-3 px-5"
+        alt="uicsa logo with text"
+      />
+    </div>
+    <div>
+      <div class="mr-5 lg:hidden">
+        <ul class="flex justify-end items-center mr-2 w-full md:w-auto">
+          <li><i class="bi bi-search mx-2"></i></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="w-6 h-6 ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+          </li>
+        </ul>
+      </div>
+      <ul class="hidden lg:flex text-md text-[#002147]">
+        <li class="inline-block p-2">
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </li>
+        <li class="inline-block p-2">
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </li>
+        <li class="inline-block p-2">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+        </li>
+        <li class="inline-block p-2">
+          <a href="https://www.facebook.com/UICSA.RDVV/"><i class="bi bi-facebook"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav id="nav" class="text-[#002147] lg:flex items-center justify-center hidden"
+  data-te-animation-init
+  data-te-animation-start="onScroll"
+  data-te-animation-on-scroll="repeat"
+  data-te-animation-reset="false"
+  data-te-animation="[fade-in-up_1s_ease-in-out]">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="" id="logoIcon" class="hidden">
+        <img src="./images/logo/uicsa.png" class="drop-shadow-lg w-12 ml-5" alt="">
+
+      </a>
+    
+      <ul class="md:flex items-center justify-around text-md  w-8/12  font-semibold  ">
+        
+        <a href="">
+          <li>Home</li>
+        </a>
+        <span class="cursor-pointer relative"  data-te-dropdown-ref>
+          <li  class="flex items-center"
+          type="button"
+          id="dropdown1"
+          data-te-dropdown-toggle-ref>Academics<i class="bi bi-chevron-down text-sm px-1 pt-1"></i></li>
+          <ul class="absolute z-10 hidden text-white shadow-lg bg-btn w-auto !-ml-5 px-2 rounded-md [&[data-te-dropdown-show]]:block "
+          aria-labelledby="dropdown1"
+          data-te-dropdown-menu-ref>
+          <div class="flex items-center p-3 text-sm font-normal">
+
+        
+          <div class="w-32 m-1">
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Diploma</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Gradution</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Post-Gradution</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Certificate</a>
+            </li>
+          </div>
+          <div class="w-32 m-1">
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Work&nbsp;Shops</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Internships</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>PHD</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Time&nbsp;Table</a>
+            </li>
+          </div>
+        </div>
+          </ul>
+        </span>
+        <a href="" >
+          <li>About&nbsp;Us</li>
+        </a>
+        {{/*  <a href=""   data-te-dropdown-ref>
+          <li   class="flex items-center"
+          type="button"
+          id="dropdown2"
+          data-te-dropdown-toggle-ref>Courses<i class="bi bi-chevron-down text-sm px-1 pt-1"></i></li>
+        </a>  */}}
+        <span class="cursor-pointer relative"  data-te-dropdown-ref>
+          <li  class="flex items-center"
+          type="button"
+          id="dropdown2"
+          data-te-dropdown-toggle-ref>Courses<i class="bi bi-chevron-down text-sm px-1 pt-1"></i></li>
+          <ul class="absolute z-10 hidden text-white shadow-lg bg-btn w-auto !-ml-5 px-2 rounded-md [&[data-te-dropdown-show]]:block "
+          aria-labelledby="dropdown2"
+          data-te-dropdown-menu-ref>
+          <div class="flex items-center p-3 text-sm font-normal">
+
+        
+          <div class="w-32 m-1">
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>MCA</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>BCA</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>PGDCA</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>PGDCS</a>
+            </li>
+          </div>
+          <div class="w-32 m-1">
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>MSc&nbsp;Cyber&nbsp;Security</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Internships</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Certificate</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Time&nbsp;Table</a>
+            </li>
+          </div>
+        </div>
+          </ul>
+        </span>
+        <a href="">
+          <li>Admission</li>
+        </a>
+        {{/*  <a href=""  data-te-dropdown-ref>
+          <li   class="flex items-center"
+          type="button"
+          id="dropdown3"
+          data-te-dropdown-toggle-ref>Student&nbsp;Corner <i class="bi bi-chevron-down text-sm px-1 pt-1"></i></li>
+        </a>  */}}
+        <span class="cursor-pointer relative"  data-te-dropdown-ref>
+          <li  class="flex items-center"
+          type="button"
+          id="dropdown3"
+          data-te-dropdown-toggle-ref>Student&nbsp;Corner<i class="bi bi-chevron-down text-sm px-1 pt-1"></i></li>
+          <ul class="absolute z-10 hidden text-white shadow-lg bg-btn w-auto !-ml-5 px-2 rounded-md [&[data-te-dropdown-show]]:block "
+          aria-labelledby="dropdown3"
+          data-te-dropdown-menu-ref>
+          <div class="flex items-center p-3 text-sm font-normal">
+
+        
+          <div class="w-32 m-1">
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Student&nbsp;Login</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Scholarship</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>e-Lectures</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Syllabus</a>
+            </li>
+          </div>
+          <div class="w-32 m-1">
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Library</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Schemes</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Results</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Fee</a>
+            </li>
+          </div>
+        </div>
+          </ul>
+        </span>
+        {{/*  <a href=""   data-te-dropdown-ref>
+          <li   class="flex items-center"
+          type="button"
+          id="dropdown4"
+          data-te-dropdown-toggle-ref>
+            For&nbsp;Faculty <i class="bi bi-chevron-down text-sm px-1 pt-1"></i>
+          </li>
+        </a>  */}}
+        <span class="cursor-pointer relative"  data-te-dropdown-ref>
+          <li  class="flex items-center"
+          type="button"
+          id="dropdown4"
+          data-te-dropdown-toggle-ref> For&nbsp;Faculty<i class="bi bi-chevron-down text-sm px-1 pt-1"></i></li>
+          <ul class="absolute z-10 hidden text-white shadow-lg bg-btn w-auto !-ml-5 px-2 rounded-md [&[data-te-dropdown-show]]:block "
+          aria-labelledby="dropdown4"
+          data-te-dropdown-menu-ref>
+          <div class="flex items-center p-3 text-sm font-normal">
+
+        
+          <div class="w-32 m-1">
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Teachers&nbsp;Login</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Assessment</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Time&nbsp;Table</a>
+            </li>
+            <li class="border-b border-transparent hover:border-white p-1">
+              <a href="" class="block " data-te-dropdown-item-ref>Syllabus</a>
+            </li>
+          </div>
+          
+        </div>
+          </ul>
+        </span>
+        <a href="">
+          <li >Examination </li>
+        </a>
+      </ul>
+      <ul class="flex justify-end items-center mr-2 w-full md:w-auto">
+        <li><i class="bi bi-search mx-2"></i></li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="w-6 h-6 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </li>
+      </ul>
+  </div>
+  </nav>
+</header>
+
+<script>
+    
+</script>

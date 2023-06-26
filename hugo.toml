@@ -1,0 +1,5 @@
+baseURL = ''
+languageCode = 'en-us'
+title = 'UICSA,University Institute of Computer Science and Applications | Rani Durgavati University, Jabalpur, Madhya Pradesh'
+relativeURLs = true
+uglyURLs = true
