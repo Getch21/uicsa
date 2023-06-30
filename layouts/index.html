@@ -76,7 +76,7 @@
         </span>
       </a>
       <a href="#"
-        class="hover:scale-110 hover:shadow-2xl h-28 lg:h-40 w-full bg-blue-8000 md:bg-cyan-500 hover:bg-cyan-400 duration-300 flex items-center md:items-start justify-center"
+        class="hover:scale-110 hover:shadow-2xl h-28 lg:h-40 w-full bg-blue-800 md:bg-cyan-800 hover:bg-cyan-400 duration-300 flex items-center md:items-start justify-center"
         data-te-animation-init data-te-animation-start="onLoad" data-te-animation="[fade-in_1s_ease-in-out]"
         data-te-animation-delay="500">
         <span class="grid place-items-center">
@@ -112,15 +112,15 @@
       <span class="flex text-blue-950 items-center justify-around">
         <p class="ml-10 hover:text-sky-500">
           <i class="bi bi-pin-angle-fill text-blue-500 mr-5"></i>
-          <a href="">Lorem ipsum dolor sit amet.</a>
+          <a href="">Two girls and two boys were selected from UICSA to intern at an international company.</a>
         </p>
         <p class="ml-10 hover:text-sky-500">
           <i class="bi bi-pin-angle-fill text-blue-500 mr-5"></i>
-          <a href="">Lorem ipsum dolor sit amet.</a>
+          <a href="">The project submission for MCA 4th semester is on 1st July.</a>
         </p>
         <p class="ml-10 hover:text-sky-500">
           <i class="bi bi-pin-angle-fill text-blue-500 mr-5"></i>
-          <a href="">Lorem ipsum dolor sit amet.</a>
+          <a href="">UICSA won first place in the national tech hackathon.</a>
         </p>
       </span>
     </marquee>
@@ -135,7 +135,7 @@
         {{ with .Site.GetPage "/home/about.md" }}
 
         <div class="lg:flex pt-5 items-center justify-center">
-          <div class="para md:w-8/12 text-lg px-10" data-te-animation-init data-te-animation-start="onScroll"
+          <div class="para md:w-8/12 text-lg px-10 text-justify" data-te-animation-init data-te-animation-start="onScroll"
             data-te-animation-on-scroll="repeat" data-te-animation-reset="true"
             data-te-animation="[fade-in-left_1s_ease-in-out]">
             <h2 class="text-4xl">{{.Title }}</h2>
@@ -144,10 +144,10 @@
             <br />
             <a href="/about/" target="_blank" class="underline text-lg">read more</a>
           </div>
-          <div class="overflow-hidden" data-te-animation-init data-te-animation-start="onScroll"
+          <div class="overflow-hidden flex items-center justify-center" data-te-animation-init data-te-animation-start="onScroll"
             data-te-animation-on-scroll="repeat" data-te-animation-reset="true"
             data-te-animation="[fade-in-right_1s_ease-in-out]">
-            <img src="{{ .Params.image }}" class="w-full h-full rounded-md scale-110 hover:scale-125 duration-500"
+            <img src="{{ .Params.image }}" class="w-8/12 h-full rounded-md scale-110 hover:scale-125 duration-500"
               alt="" />
           </div>
         </div>
@@ -158,28 +158,21 @@
 
   {{/* section for news and achivement */}}
   <section class="bg-slate-200 ">
-    <div class="container mx-auto lg:flex py-5 " >
+    <div class="container mx-auto grid lg:flex py-5 " >
       {{/* div for news and event */}}
-      <div class="h-full w-7/12 bg-white rounded-md">
+      <div class="h-full w-full md:w-7/12 bg-white rounded-md">
         <h2 class="py-2 mb-2 text-4xl font-semibold w-full text-center text-white bg-btn drop-shadow-lg">
           News & Events
         </h2>
         <marquee class="bg-white py-3" behavior="scroll" scrollamount="3" height="80%" direction="up"
           onmouseover="this.stop();" onmouseout="this.start();" title="Hover to Stop news !">
-          <div class="grid px-20">
-            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Lorem
-              ipsum dolor sit amet.</a>
-            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Lorem
-              ipsum dolor sit ametipsum dolor sit amet .</a>
-            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Lorem
-              ipsum dolor sit amet.</a>
-            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Lorem
-              ipsum dolor sit amet.</a>
-            <a href="" class="py-3 flex"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Lorem
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              earum esse maxime..</a>
-            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Lorem
-              ipsum dolor sit amet.</a>
+          <div class="grid px-5 md:px-20">
+            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>UICSA won first place in the national tech hackathon.</a>
+            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>The MCA 4th semester results have been declared. Please check them here.</a>
+            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>The project submission for MCA 4th semester is on 1st July.</a>
+            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Four students were selected from UICSA to intern on National Internship promated by SERB.</a>
+            <a href="" class="py-3 flex"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>Two students were placed from UICSA to intern at an international company.</a>
+            <a href="" class="py-3"><i class="bi bi-pin-angle-fill text-blue-600 mr-3"></i>UICSA won first place in the national tech hackathon.</a>
           </div>
         </marquee>
         <span class="w-full grid place-items-center my-3">
@@ -299,19 +292,16 @@
     <div class="container mx-auto flex items-center justify-around h-full px-20 text-white">
       <div class="lg:w-4/12 grid place-items-center ">
         <h3 class="text-3xl mb-2 -translate-y-6">Directer's Desk</h3>
-        <img src="./images/proff.jpg" class="w-40 h-40 object-right rounded-full bg-black" title="director" alt="" />
-        <span class="mt-2 ">Prof V Kanad</span>
+        <img src="./images/director.jpg" class="w-40 h-40 object-right rounded-full bg-black" title="director" alt="" />
+        <span class="mt-2 ">Professor Mridula dubey</span>
       </div>
       <div class="lg:w-8/12 mr-5">
         <h3 class="text-2xl">
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-          dolores!"
+          “If you want to shine like a sun , first burn like sun.”
+          <span>Dr. A. P. J. Abdul Kalam</span>
         </h3>
         <div class="mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          ipsum possimus, obcaecati dolor molestias dicta natus porro cum rerum
-          est unde, temporibus dolorum. Maiores tempore mollitia ut explicabo
-          possimus eius?
+          A new beginning, a New Year, new aspirations and vigor as I take this opportunity to welcome all the young Students to St. Aloysius College. This institution stands tall in quality and I am glad that you have chosen this institution to mould and shape your future.
           <br />
           <a href="/principle/" target="_blank" class="underline text-lg">Read more</a>
         </div>
@@ -385,16 +375,14 @@
 
     {{/* section for why uicsa */}}
     <section class="bg-yellow-300 ">
-      <div class="container mx-auto py-10">
+      <div class="container  mx-auto py-10">
     
         <h2 class="text-4xl font-semibold text-center text-white mb-2">Why UICSA</h2>
-        <div class=" sm:flex-col-2 md:flex-col-3 lg:flex items-center justify-center">
+        <div class="grid place-items-center lg:flex items-center justify-center">
           <div class="overflow-hidden rounded-full w-40 h-40 m-2 relative  border-4 border-white flex items-center justify-center"> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""> <span class="absolute w-full h-full grid place-items-center bg-[#0021479b] text-white font-semibold">Student's Support</span></div>
           <div class="overflow-hidden rounded-full w-40 h-40 m-2 relative  border-4 border-white flex items-center justify-center"> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""> <span class="absolute w-full h-full grid place-items-center bg-[#0021479b] text-white font-semibold">Placement Cell</span></div>
           <div class="overflow-hidden rounded-full w-40 h-40 m-2 relative  border-4 border-white flex items-center justify-center"> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""> <span class="absolute w-full h-full grid place-items-center bg-[#0021479b] text-white font-semibold">department Library</span></div>
           <div class="overflow-hidden rounded-full w-40 h-40 m-2 relative  border-4 border-white flex items-center justify-center"> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""> <span class="absolute w-full h-full grid place-items-center bg-[#0021479b] text-white font-semibold">Teacher's Support</span></div>
-          <div class="overflow-hidden rounded-full w-40 h-40 m-2 relative  border-4 border-white flex items-center justify-center"> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""> <span class="absolute w-full h-full grid place-items-center bg-[#0021479b] text-white font-semibold">Student's Support</span></div>
-          <div class="overflow-hidden rounded-full w-40 h-40 m-2 relative  border-4 border-white flex items-center justify-center"> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""> <span class="absolute w-full h-full grid place-items-center bg-[#0021479b] text-white font-semibold">Student's Support</span></div>
           <div class="overflow-hidden rounded-full w-40 h-40 m-2 relative  border-4 border-white flex items-center justify-center"> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""> <span class="absolute w-full h-full grid place-items-center bg-[#0021479b] text-white font-semibold">Student's Support</span></div>
         </div>
       </div>
@@ -446,13 +434,13 @@
     
     <h2 class="text-4xl font-semibold text-center text-white mb-2">Glimpse of the Department Activities</h2>
     <div class="owl-carousel3 flex">
-      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
-      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
-      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
-      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
-      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
-      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
-      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/courses/card1.jpeg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
+      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/banner/gcard1.jpg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
+      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/banner/gcard2.jpg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
+      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/banner/gcard3.jpg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
+      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/banner/gcard5.jpg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
+      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/banner/gcard4.jpg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
+      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/banner/gcard6.jpg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
+      <div class="overflow-hidden rounded-md m-2 "> <img src="./images/banner/gcard7.jpg" class="h-48 w-full object-cover object-center hover:scale-110 duration-500" alt=""></div>
     </div>
   </div>
   </section>

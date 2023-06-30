@@ -1,7 +1,7 @@
 ---
 title: "About UICSA"
 Director: prof. Mridula dubey
-image: "./images/about/uicsa.jpg"
+image: "./images/about/uicsa2.jpg"
 
 ---
 
